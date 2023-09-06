@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Home</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light " style="background-color: red;">
+	  <a class="navbar-brand" href="#">
+	  <img src="navLogo.png" class="card-img-top" alt="Course 3" style="width: 80px;  height: 70px"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse font-weight-bold" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="/studentHome">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/myLeaningCourse">Buy Course</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/myCourse">My Learning</a>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="justify-content-end font-weight-bold" >
+	  <ul class="navbar-nav">
+	  	<li>
+	  		<a class="nav-link" href="/">Logout</a>
+	  	</li>
+	  </ul>
+	  </div>
+	</nav>
+	
+	<div class="jumbotron text-center">
+        <h1>Welcome to <b style="font-family: cursive;color: red;">LearnCoding</b></h1>
+        <p>Find and purchase courses to enhance your Coding knowledge.</p>
+    </div>
+    <div class="text-center bg-light"><h1 class="mt-3"> Welcome Student!!</h1></div>
+	
+	<div class="container mt-4 " style="padding: 4% 15%;">
+		<div class="card p-5  border border-dark " style="color: red;background-color:#BDBDBD">
+			<a href="/myLeaningCourse" class="btn btn-primary border border-dark btn-lg active mb-4" role="button" aria-pressed="true">Buy Courses</a>
+			
+			<a href="myCourse" class="btn btn-danger border border-dark btn-lg active" role="button" aria-pressed="true">My Learning</a>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Who is Student/Trainee?</h5>
+                <p>A trainee is an individual who is undergoing a period of learning, development, and practical experience 
+                in a specific field or occupation. Traineeships are designed to provide hands-on training, allowing individuals to 
+                acquire new skills, knowledge, and competencies in preparation for their future careers.</p>
+                <p>Traineeships offer a valuable opportunity for individuals to bridge the gap between theoretical knowledge and real-world application. 
+                During this period, trainees work under the guidance and supervision of experienced professionals, 
+                who provide mentorship and support to help them develop their abilities and gain practical experience.</p>
+            </div>
+           
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="trainee.jpg" class="card-img-top" alt="Course 2">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="text-center bg-light"><h1 class="mt-3"> Course Ratings</h1></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    
+                    <div class="card-body">
+                        <p class="card-text"><b>"</b>This is an amazing place for course and definitely a masterclass in Java and 
+                        how to use all facets of the programming language to excel. Tim, and his team, 
+                        have clearly gone above and beyond to provide all the content for this course. 
+                        It's taken a long time for me to work my way through the course, 
+                        but I feel it has been well worthwhile. Anyone wanting to know all about Java 
+                        cannot go wrong taking this course and I would highly recommend it!<b>"</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text"><b>"</b>I took this course by recommendation from a you tube video, and I 
+                        didn't regret it. By far this is the most digestible SQL course I took. 
+                        The instructor talks in clear and understandable way with perfect pace and small bites 
+                        for good understanding. I feel like I paid too little for this course and things I've learned. 
+                        I recommend it with pleasure.<b>"</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text"><b>"</b>
+                        The course is great for both beginners as well as intermediate learners. It covers all basics
+                         necessary to grasp core concepts of a OOP language. 
+                        I deducted half a star for the lack of exercises in helping develop more confidence for a 
+                        first time learner.I do wish that LearnCoding adds more exercises which will eventually 
+                        help build confidence for ppl new in python.What i liked about the Learncodin is there style of 
+						teaching and showing us how to read documentation, which is believe is a 
+						required skill to be a quick and effective programmer.
+						All in all this is a good start to the amazing journey of coding!Thanks LearnCoding<b>"</b></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+	<footer class="footer bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="studentHome">Home</a></li>
+                    <li><a href="/myLeaningCourse">Buy Course</a></li>
+                    <li><a href="/myCourse">My Learning</a></li>
+                    <li><a href="/">LogOut</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-6">
+                <h5>Contact</h5>
+                <address>
+                    123 BTM, Bangalore<br>
+                    KA, India<br>
+                    Phone: +91 9632158740<br>
+                    Email: learnCoding@example.com
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3">
+        &copy; 2023 LearnCoding Private Limited. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

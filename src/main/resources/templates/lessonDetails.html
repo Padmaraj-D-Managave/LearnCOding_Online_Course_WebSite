@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Lesson Details</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+<body>
+	<div class="container mt-5">
+		<a class="btn btn-danger mb-4" href="getlesson" role="button">Back</a>
+            <div class="container">
+                <div class="alert alert-success" role="alert" th:text="${success}" th:if="${success}"></div>
+            <div class="alert alert-danger text-center" role="alert" th:text="${error}" th:if="${error}"></div>
+                <table class="table table-hover" style="height: 30%;">
+                    <thead>
+                        <h3 class="table-info text-center border border-dark">Details of Lessons</h3>
+                    <tr class="table-secondary text-center">
+                        <th scope="col" class="border border-dark">Lesson ID</th>
+                        <th scope="col" class="border border-dark">Lesson Name</th>
+                        <th scope="col" class="border border-dark">Lessons Topics</th>
+                        <th scope="col" class="border border-dark">Link</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-warning text-center" th:each="lesson:${lesson}" >
+                        <td th:text="${lesson.lessonId}" class="border border-dark"></td>
+                        <td th:text="${lesson.lessonName}" class="border border-dark"></td>
+                        <td th:text="${lesson.topic}" class="border border-dark"></td>
+                        <td  class="border border-dark">
+                        	<a th:href="${lesson.link}"  th:text="${lesson.link}" >
+                        	</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--  <div>
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/2RZQN_ko0iU" title="YouTube video player" 
+                	frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                	allowfullscreen></iframe>
+                </div>-->
+            </div>
+        </div>
+        <div class="container mt-5 border border-dark">
+        	<h3 class="badge badge-success text-font-big mt-2 border border-dark" style="font-size: medium;">Ask Your Doubts Here</h3>
+        	<form action="/addComments" method="post">
+        		<textarea rows="4" cols="148" name="comment"> </textarea>
+        		<button class="btn btn-info mb-3 mt-2" type="submit" >Add Comment </button>
+        	</form>
+        </div>
+        <div class="container mt-5 border border-dark">
+        	<h3 class="badge badge-success text-font-big mt-2 border border-dark" style="font-size: medium;">Comments</h3>
+        	<table>
+        		<tbody>
+        			<tr th:each="list:${list}">
+        				<td th:text="${list.comment}"></td>
+        			</tr>
+        		</tbody>
+        	
+        	</table>
+        	</div>
+        	
+        	
+
+</body>
+</html>
